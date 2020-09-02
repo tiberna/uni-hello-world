@@ -1,0 +1,11 @@
+on: push # on every push to the repo
+
+name: GitHub Actions Hello World
+
+jobs:
+  build:
+    name: Hello world
+    runs-on: ubuntu-latest # useful environment to we can run a simple bash    
+    steps:
+    - name: hello-world
+      run: echo "Hello!"
